@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Secure</title>
+    <th:block th:insert="base :: header"></th:block>
+</head>
+<body>
+
+<div th:replace="base :: nav"></div>
+
+<div class="container">
+    <h3>Secure Page</h3>
+    <a href="/logout">logout</a>
+    <h4>email</h4>
+    <p th:text="${myuser.email}"></p><br />
+    <h4>last name</h4>
+    <p th:text="${myuser.lastName}"></p>
+</div>
+
+<div th:replace="base :: footer"></div>
+</body>
+</html>

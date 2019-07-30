@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Logout Page</title>
+    <th:block th:insert="base :: header"></th:block>
+</head>
+<body>
+
+<div th:replace="base :: nav"></div>
+
+<div class="container">
+    <h1>Logout Page</h1>
+    <h2>You have been successfully logged out.</h2>
+    <p></p>
+    <a href="/login">Log in</a>
+    <a href="/">Home</a>
+</div>
+
+<div th:replace="base :: footer"></div>
+
+</body>
+</html>
